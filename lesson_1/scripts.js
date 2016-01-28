@@ -6,27 +6,26 @@ window.onload =
 		// видимо инстанс функции или чего-то еще и на доске появлялся еще олин выделенный элемент 
 		var selectedCell = 'A1';
 		var selectedStyle;
-
+		function getRandom(min, max) {
+				return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+		function getRandomLetter()
+		{
+			var alphabet = 'абвгдеёжзиклмнопрстуфхцчшщъыьэюя';
+			var alphabetArray = alphabet.split(''); //сначала сделал строку, а потом прочитал, что нужен массив, поэтому так
+			var letter_pos = getRandom(0, (alphabet.length) - 1);
+		  	return alphabet.substring(letter_pos, letter_pos + 1);
+		}
+		function getRandomColor(){
+			var r = getRandom(0, 255);
+			var g = getRandom(0, 255);
+			var b = getRandom(0, 255);
+			return '#' + r.toString(16) + g.toString(16) + b.toString(16);
+		}
 		document.getElementById('createTableButton').onclick = function(){
 			var n; // таблица n*m
 			var m;
 			var table = '';
-			var alphabet = 'абвгдеёжзиклмнопрстуфхцчшщъыьэюя';
-			var alphabetArray = alphabet.split(''); //сначала сделал строку, а потом прочитал, что нужен массив, поэтому так
-			function getRandom(min, max) {
-  				return Math.floor(Math.random() * (max - min + 1)) + min;
-			}
-			function getRandomLetter()
-			{
-				var letter_pos = getRandom(0, (alphabet.length) - 1);
-			  	return alphabet.substring(letter_pos, letter_pos + 1);
-			}
-			function getRandomColor(){
-				var r = getRandom(0, 255);
-				var g = getRandom(0, 255);
-				var b = getRandom(0, 255);
-				return '#' + r.toString(16) + g.toString(16) + b.toString(16);
-			}
 			//Очищаем результат выполнения другой кнопки
 			document.getElementById('content').innerHTML = '';
 			n = prompt('Введите количество столбцов таблицы');

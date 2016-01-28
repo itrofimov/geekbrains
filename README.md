@@ -1,4 +1,5 @@
 # geekbrains
-GeekBrains
-GeekBrains JS courses Homework files
 
+GeekBrains JS course homework files
+
+http://geekbrains.ru

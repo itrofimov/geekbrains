@@ -1,0 +1,37 @@
+table{
+	 border: 1px solid black;
+}
+#chess, .currentCell{
+	clear: both;
+}
+#currentCell{
+	margin: 20px;
+}
+.chessRow{
+	clear: both;
+	float: left;
+}
+.ChessColHead div, .chessRow div, .chessRowHead{
+	float: left;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+}
+.ChessColHead div{
+	border: 1px solid white;
+}
+.chessRow div{
+	border: 1px solid black;
+}
+.chessRow .chessRowHead{
+	border: 1px solid white;
+}
+.brown{
+	background-color: brown;
+}
+.copyright{
+	clear: both;
+}
+.red{
+	color: red;
+}
