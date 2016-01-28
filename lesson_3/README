@@ -1,0 +1,72 @@
+ДЗ к уроку 3
+1. Найти все элементы h1, являющиеся потомками div и заменить их содержимое на произвольное.
+
+<body>
+
+	<h1>abc</h1>
+
+	<div>
+
+		<h1>div-1</h1>
+
+		<h1>div-2</h1>
+
+	</div>
+
+	<h1>xyz</h1>
+
+</body>
+
+
+2. Установить всем input type="text" произвольное содержимое. Содержимое второго инпута должно отличаться от первого.
+
+<body>
+
+	<form  name='demo_form'>
+
+		First name: <input type="text" name="fname"><br>
+
+		Last name: <input type="text" name="lname"><br>
+
+		<input type="submit" value="Submit">
+
+	</form>
+
+</body>
+
+
+3. Выведите значение option с value=2
+
+<body>
+
+	<select id="myselect">
+
+		<option value="1">Option-1</option>
+
+		<option value="2">Option-2</option>
+
+		<option value="3">Option-3</option>
+
+	</select>
+
+</body>
+
+
+4. Обернуть текст во втором li тегом b:
+
+<body>
+
+	<ui>
+
+		<li>Html Tutorial</li>
+
+		<li>Mongodb Tutorial</li>
+
+		<li>Python Tutorial</li>
+
+	</ul>
+
+</body>
+
+ 
+5. Извлеките последний li из предыдущего примера.
