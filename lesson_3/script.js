@@ -5,6 +5,7 @@ window.onload = function(){
 	$(':text[name="lname"]').val('Фамилия');
 	$('select').after('<br />Ответ: ' + $('select option[value=2]').html())
 	$('ul > li').eq(1).wrapInner('<b>');
+	$('ul > li').last().remove();
 	// импровизация
 	$('p').css('color','green');
 }
