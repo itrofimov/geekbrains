@@ -1,0 +1,42 @@
+body{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+#jtabs{
+	margin: 10px;
+	width: 50%;
+	border: 1px solid blue;
+}
+#jtabs > ul{
+	margin-top: 0;
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid blue;
+	padding: 0;
+}
+#jtabs > ul > li{
+	list-style-type : none;
+	display: inline-block;
+	padding: 0px 15px 0px 15px;
+	cursor: pointer;
+	border-right: 1px solid blue;
+	margin-left: -4px;
+	height: 35px;
+	line-height: 35px;
+	vertical-align: middle;
+}
+#jtabs > ul > li:first-child{
+	margin-left: 0;
+}
+#jtabs > ul > li:hover{
+	background-color: #FFFFDF;
+}
+#jtabs div{
+	border: 1px solid blue;
+	padding: 0px 10px 10px 10px;
+}
+.active{
+	background-color: #EFEFEF;
+	color: blue;
+}
