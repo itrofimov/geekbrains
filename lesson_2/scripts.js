@@ -1,5 +1,7 @@
 /*Альтернативный вариант домашнего задания*/
 //Класс шахматной доски
+ChessBoard.prototype.counter = 0;
+
 function ChessBoard(containerId)
 {
 	// Сюда пишется индекс выбранной ячейки
@@ -120,6 +122,10 @@ function ChessBoard(containerId)
 	}
 	//метод создания доски
 	this.create = function(){
+		//тест счетчика объектов
+		Object.getPrototypeOf(this).counter++;
+		this.counter = Object.getPrototypeOf(this).counter;
+		console.log(this.counter); //работает
 		//Элемент куда вставляется доска
 		contentNode=document.getElementById(containerId);
 		contentNode.innerHTML='';
