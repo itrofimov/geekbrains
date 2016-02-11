@@ -9,7 +9,7 @@
 				if(response.result) $('#response').text('Валидация пройдена').css('color','green');
 				else {
 					$.each(response.error, function(name,value){
-						$('form > *[name="' + name.toLowerCase() + '"]').next('span').text(value);
+						$('form > [name="' + name.toLowerCase() + '"]').next('span').text(value);
 						$('#response').text('Валидация не пройдена').css('color','red');
 					});
 				}
