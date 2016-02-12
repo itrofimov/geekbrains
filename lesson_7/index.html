@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript ДЗ. Урок 5.</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<link href="jquery-ui.min.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
+	<script type="text/javascript" src="aj.js"></script>
+</head>
+<body>
+<form method="post">
+	<input type="text" name="username" placeholder="Имя пользователя" /><br />
+	<input type="password" name="password" placeholder="Пароль"/><br />
+	<input type="text" name="email" placeholder="email" /><br />
+	<select name="gender">
+			<option value="М">М</option>
+			<option value="Ж">Ж</option>
+	</select><br />
+	<input type="text" name="credit card" placeholder="Номер карты" /><br />
+	<input type="text" name="birth" placeholder="Дата рождения" /><br />
+	<input type="text" name="bio" placeholder="О себе..." /><br />
+	<input type="button" id="validate" value="Отправить" /><br />
+</form>
+<div id="response"></div>
+<div id="dialog" title="Ошибки">
+</body>
+</html>
